@@ -1,0 +1,228 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: poppins;
+}
+
+:root {
+  --main-color: #100e3d;
+  --sec-color: #4940ff;
+  --grey: #f3f6fb;
+}
+
+body {
+  overflow: hidden;
+}
+
+main {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--main-color);
+  display: flex;
+  padding: 1.5rem;
+  padding-left: 0;
+}
+
+.side-nav {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.side-nav .logo {
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.side-nav .auctions,
+.side-nav .vehicles {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.side-nav .auctions .nav-title,
+.side-nav .vehicles .nav-title {
+  color: #a8acbc;
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+}
+
+.side-nav .auctions li,
+.side-nav .vehicles li {
+  list-style: none;
+  padding: 0 1.5rem;
+  margin-bottom: .5rem;
+}
+.side-nav .vehicles .nav-active{
+    border-left: 4px solid var(--sec-color);
+}
+
+.side-nav .vehicles .nav-active a{
+  background-color: var(--sec-color);
+  border-radius: .4rem;
+}
+
+.side-nav .auctions li a,
+.side-nav .vehicles li a {
+  display: flex;
+  gap: 1.5rem;
+  color: #a8acbc;
+  text-decoration: none;
+  font-size: 1.2rem;
+  padding: 1rem;
+
+  /* border: 2px solid #fff; */
+}
+
+.side-nav .auctions li a img,
+.side-nav .vehicles li a img {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* RIGHT COL */
+
+.right-col {
+  width: 80%;
+  background-color: #fff;
+  border-radius: 2rem;
+  background-color: var(--grey);
+  overflow: hidden;
+}
+
+.right-col nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: #fff;
+}
+
+.header {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.nav-btns {
+  display: flex;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.right-col .search {
+  display: flex;
+  width: 20rem;
+  padding-left: 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 40rem;
+  background-color: var(--grey);
+}
+
+.search i,
+.notification i {
+  display: grid;
+  place-content: center;
+  height: 3rem;
+  width: 3rem;
+  color: #fff;
+  font-size: 1.4rem;
+  border-radius: 40rem;
+}
+
+.right-col .search i {
+  background-color: var(--sec-color);
+}
+
+.notification i {
+  background-color: var(--grey);
+  color: var(--main-color);
+}
+
+.user {
+  height: 3rem;
+  width: 3rem;
+  overflow: hidden;
+  border-radius: 40rem;
+}
+
+.user img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.right-main {
+  padding: 2rem;
+}
+
+.active {
+  display: flex;
+  justify-content: space-between;
+}
+
+.active .status {
+  display: flex;
+  gap: 1.5rem;
+  padding: 0 1.5rem;
+  background-color: #fff;
+  width: max-content;
+  border-radius: 40rem;
+}
+
+.active .status li {
+  list-style: none;
+  height: 3.5rem;
+  display: grid;
+  place-content: center;
+}
+
+.active .status li a {
+  color: #a8acbc;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.active .status li:first-child {
+  border-bottom: 2px solid var(--sec-color);
+}
+
+.active .status li:first-child a {
+  color: var(--sec-color);
+}
+
+.active .filter {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0 1.5rem;
+  height: 3.5rem;
+  background-color: #eeeff4;
+  border-radius: 40rem;
+}
+
+.active .filter i,
+.active .filter p {
+  font-size: 1.2rem;
+}
+
+/* Display */
+.display{
+  background-color: #fff;
+  display: flex;
+}
+
+.left-dis{
+  width: 40%;
+}
+
+.right-dis{
+  width: 60%;
+}
