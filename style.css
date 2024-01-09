@@ -339,7 +339,7 @@ main {
 /* RIGHT DISPLAY */
 .right-dis{
   width: 60%;
-  padding: 2rem 2rem;
+  padding: 2rem;
 }
 
 .right-dis .brand{
@@ -459,4 +459,75 @@ main {
   color: #fff;
   border-radius: .6rem;
   width: 18%;
+}
+
+@media (max-width: 430px) {
+  body, .right-col{
+    overflow-y: scroll;
+  }
+
+  main{
+    padding: 0;
+  }
+
+  .side-nav{
+    display: none;
+  }
+
+  .right-col{
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .right-col nav .nav-btns{
+    display: none;
+  }
+
+  .right-main{
+    padding: 1rem;
+  }
+
+  .active .filter{
+    display: none;
+  }
+
+  .display{
+    flex-direction: column;
+  }
+
+  .left-dis .car-color img{
+    width: 8rem;
+  }
+
+  .left-dis, .right-dis{
+    width: 100%;
+  }
+
+  .right-dis .brand p, .brand-name2, .order-det{
+    font-size: 1.2rem;
+  }
+
+  .auction-info div p{
+    font-size: 1.2rem;
+  }
+
+  .bid-det div p:first-child{
+    font-size: 1.2rem;
+  }
+  
+  .bid-det div p:last-child{
+    font-size: 1rem;
+  }
+
+  .left-dis, .right-dis{
+    padding: 1rem;
+  }
+
+  .place-bid input{
+    width: 70%;
+  }
+
+  .place-bid button{
+    width: 28%;
+  }
 }
