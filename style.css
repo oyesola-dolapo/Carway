@@ -155,6 +155,10 @@ main {
   background-color: #fff;
 }
 
+.right-col nav .fa-solid{
+  display: none;
+}
+
 .header {
   font-size: 1.8rem;
   font-weight: 600;
@@ -479,8 +483,21 @@ main {
     border-radius: 0;
   }
 
-  .right-col nav .nav-btns{
+  .right-col nav .nav-btns .search, 
+  .right-col nav .nav-btns .notification,
+  .right-col nav .nav-btns .fa-chevron-down
+  {
     display: none;
+  }
+
+  .right-col nav .fa-solid{
+    display: block;
+    font-size: 2rem;
+    align-items: center;
+  }
+
+  .right-col nav .user{
+    display: block;
   }
 
   .right-main{
