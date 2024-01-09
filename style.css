@@ -286,6 +286,34 @@ main {
   font-weight: 600;
 }
 
+/* RIGHT DISPLAY */
 .right-dis{
   width: 60%;
+  padding: 3rem 0;
+}
+
+.right-dis .brand{
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.right-dis .brand img{
+  width: 3.5rem;
+  border: 1px solid grey;
+  border-radius: .4rem;
+  padding: .4rem;
+}
+
+.right-dis .brand p, .brand-name2, .order-det{
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.brand-name2{
+  margin-top: 1rem;
+}
+
+.order-det{
+  opacity: .5;
 }
